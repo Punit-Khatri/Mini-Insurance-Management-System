@@ -15,11 +15,11 @@
             <form action="{{ route('policies.store') }}" method="POST">
                 @csrf
                 <div class="mb-4">
-                    <label for="name" class="block text-gray-700 text-sm font-bold mb-2">
+                    <label for="policy_name" class="block text-gray-700 text-sm font-bold mb-2">
                         Policy Name
                     </label>
-                    <input type="text" name="name" id="name" class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"><br>
-                    <span class="text-red-500 text-sm">{{ $errors->first('name') }}</span>
+                    <input type="text" name="policy_name" id="policy_name" class="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"><br>
+                    <span class="text-red-500 text-sm">{{ $errors->first('policy_name') }}</span>
                 </div>
                 <div class="mb-4">
                     <label for="description" class="block text-gray-700 text-sm font-bold mb-2">
